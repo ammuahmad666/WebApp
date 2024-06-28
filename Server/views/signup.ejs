@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ahmad Azeem ">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles2.css">
+    <script defer src="js/pt"></script>
+    <title>WebApp</title>
+</head>
+<body>
+    
+      
+   
+    <form action="/register" method="POST">
+        <h3>Register</h3>
+     
+        <label for="fname">First Name</label>
+        <input name="fname" type="text" placeholder="First Name" id="fname" required>
+        <label for="lname">Last Name</label>
+        <input name="lname" type="text" placeholder="Last Name" id="lname" required>
+
+        <label for="username">Username</label>
+        <input name="name" type="text" placeholder="Name" id="name"  required>
+
+        <label for="email">Email</label>
+        <input name="email" type="email" placeholder="Email" id="email" required>
+        
+        
+        
+        <div class="password">
+            <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <img id="vis" src="img/visible.png"/>
+    </div>
+        <button class="register_button">Register</button>
+        
+      
+    </form>
+    <%if (error!=="None") {%>
+        
+    
+    <script>console.log("<%-error %>")
+    alert("<%-error %>"
+    )</script>
+    <%} %>
+    
+</body>
+</html>
+

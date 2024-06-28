@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: stretch;
+    background-color:#E6E6FA;
+}
+.sidepcontainer{
+    flex-grow: 1;
+    height: 100vh;
+    flex-basis: 15vw;
+}
+.sidepanel{
+   border-radius: 10px;
+    height:99%;
+    width:95%;
+    margin:5px;
+    gap: 5px;
+    display:flex;
+    flex-direction: column;
+    background-color: #8487AE;
+
+}
+.sidepheader{
+    text-align: center;
+    width:100%;
+    flex-basis: 60px;
+   
+}
+.mainpanel{
+    height: 100vh;
+    width: 85vw;
+
+    flex-grow: 5;
+    
+}
+

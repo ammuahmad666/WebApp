@@ -1,13 +1,19 @@
-import React from 'react';
+import React,{useContext,createContext} from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+//import {userContext} from './userContext.js'
+import { AuthContextProvider } from './context/AuthContext.js';
+const user=new URLSearchParams(window.location.search).get('user');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AuthContextProvider>
+      <App/>
+    </AuthContextProvider>
+     
   </React.StrictMode>
 );
 

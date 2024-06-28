@@ -1,0 +1,41 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.sidepchild{
+    display: flex;
+    font-size: small;
+    flex-basis: 60px;
+    min-width: fit-content;
+    align-items: stretch;
+    width:100%;
+    background-color: #8487AE;
+
+
+}
+.sidepchild:hover{
+    
+    background-color: #DADBE7;
+    border-left-style: solid;
+    border-color: blueviolet;
+    border-width: 5px;
+
+    
+}
+.selected{
+    background-color: #383A56;
+}
+p{
+    color:rgb(0, 0, 0);
+    padding: 12px;
+    width:fit-content;
+    text-align: center;
+    line-height: 25px;
+  
+}
+.img{
+    margin-top: 15px;
+    margin-left: 5px;
+}

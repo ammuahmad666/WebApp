@@ -1,0 +1,50 @@
+.main-panel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #E6E6FA;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap:4px;
+    height: 99%;
+    margin: 5px;
+}
+.b-container{
+    
+    display: flex;
+    flex-basis: calc(100% - 60px);
+    min-height: calc(100% - 60px);
+    flex-direction: column-reverse;
+    gap: 5px;
+    overflow-y: scroll;
+}
+
+.send-box{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    min-height: 60px;
+    flex-basis: 100%;
+
+}
+.text-box{
+    width:95%;
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 40px;
+    border-radius: 500px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-style:solid;
+    min-height: 40px;
+}
+#send-img{
+    height:40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+}

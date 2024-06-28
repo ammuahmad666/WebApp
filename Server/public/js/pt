@@ -1,0 +1,18 @@
+const inp=document.getElementById("password");
+const img=document.getElementById("vis");
+let first=true;
+
+function toggle(){
+    
+    if(first){
+        
+        img.setAttribute("src","img/hide.png");
+        inp.setAttribute("type","text");
+    }
+    else{
+        img.setAttribute("src","img/visible.png");
+        inp.setAttribute("type","password");
+    }
+    first=!first;
+}
+img.addEventListener("click",toggle);

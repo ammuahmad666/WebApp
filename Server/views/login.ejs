@@ -9,23 +9,23 @@
     <title>WebApp</title>
 </head>
 <body>
-    <form>
+    <form method="post" action="/login">
         <h3>Login Here</h3>
 
         <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username">
+        <input type="text" placeholder="Email or Phone" name="username" id="username">
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button>Log In</button>
+        <button type="submit">Log In</button>
         <div class="social">
           <div class="go"><i class="fab fa-google"></i>  Google</div>
           <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
         </div>
         <div class="signup">
             <h2 class="signup_divider"><span>Not a user! Register</span></h2>
-            <button class="signup_button">SignUp</button>
+            <button onclick="location.href='/register'" type="button" class="signup_button">SignUp</button>
         </div>
     </form>
 </body>
